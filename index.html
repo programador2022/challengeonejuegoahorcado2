@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>JUEGO DE AHORCADO ALURA</title>
+	<link rel="stylesheet"  href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div class="contenedor">
+			
+			<div class="logo">
+				<img class="vector" src="img/vector.png" alt="Logo Alura">
+				<h1 class="textoLogo">CHALLENGE 2 AHORCADO ALURA</h1>
+			</div>
+
+			<section id="agregarPalabras">
+				<div id="ingreso">
+					<input type="text" id="caja" maxlength="8" placeholder="ingrese palabra"></input>
+				</div>
+				<div class="botoneraAgregar">
+					<p id="advertencia">Maximo de 8 letras y sin acentos</p>
+					<button id="jugar">JUGAR</button>
+					<button id="guardar">GUARDAR</button>
+					<button id="cancelar">CANCELAR</button>
+				</div>
+			</section>
+
+			<section id="juego">
+				<div id="muneco">
+					<canvas id="canvas">
+
+					</canvas>
+						<div class="mensajes">
+							<p id="ganaste">¡GANASTE FELICIDADES!</p>
+							<p id="perdiste">¡LO SIENTO PERDISTE INTENTALO DE NUEVO!</p>
+						</div>
+				</div>
+				<div id="palabraOculta">
+					<p id="palabraAdivinar">
+					
+					</p>
+				</div>
+				<div id="letrasIngreso">
+					<p id="letrasIngresadas">
+					   <span> </span>
+					</p>
+				</div>
+				<div id="botoneraJuego">
+					<button id="nuevo">JUEGO NUEVO</button>
+					<button id="desistir">ABANDONAR</button>
+				</div>
+			</section>
+
+			<div class="botonera">
+				<button id="iniciar">INICIAR JUEGO</button>
+				<button id="agregar" >AGREGAR PALABRA</button>
+			</div>
+		</div>
+
+		<div>
+                            <h2>TRISTAN QUINTEROS-WAMED</h2>
+                            <button class="linkedin">in</button>                        
+                        </div>
+	<script src="codigo.js"></script>
+	
+	</body>
+
+</html>
